@@ -4,19 +4,19 @@
 // З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, 
 // у якої кількість цукерок є більшою, або вивести, що кількість однакова.
 // __________________________________________________________
-// let name1stChild = prompt('Введіть ім-я першої дитини:', '')
-// let candiesFor1stChild = parseInt(prompt('Введіть кількість цукерок у першої дитини:', '')!)
-// let name2ndChild = prompt('Введіть ім-я другої дитини:', '')
-// let candiesFor2ndChild = parseInt(prompt('Введіть кількість цукерок у другої дитини:', '')!)
-// let result: string = ''
-// if (candiesFor1stChild > candiesFor2ndChild) {
-//   result = `${name1stChild} має більше цукерок.`
-// } else if (candiesFor2ndChild > candiesFor1stChild)
-//   result = `${name2ndChild} має більше цукерок.`
-//   else {
-//     result = 'У обох дітей однакова кількість цукерок.'
-// }
-// document.write(result)
+let name1stChild = prompt('Введіть ім-я першої дитини:', '')
+let candiesFor1stChild = parseInt(prompt('Введіть кількість цукерок у першої дитини:', '')!)
+let name2ndChild = prompt('Введіть ім-я другої дитини:', '')
+let candiesFor2ndChild = parseInt(prompt('Введіть кількість цукерок у другої дитини:', '')!)
+let result: string = ''
+if (candiesFor1stChild > candiesFor2ndChild) {
+  result = `${name1stChild} має більше цукерок.`
+} else if (candiesFor2ndChild > candiesFor1stChild)
+  result = `${name2ndChild} має більше цукерок.`
+  else {
+    result = 'У обох дітей однакова кількість цукерок.'
+}
+document.write(result)
 // ___TASK_02______________________________________
 // З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо 
 // у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
