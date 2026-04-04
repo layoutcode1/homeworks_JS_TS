@@ -29,40 +29,40 @@ document.write(result)
 // у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
 // _______________________________________________________
 
-// const productPrice = parseFloat(prompt('Product Price', '')!)
-// const clientMoney = parseFloat(prompt('Client Money', '')!)
-// const loteryPrice: number = 4
+const productPrice = parseFloat(prompt('Product Price', '')!)
+const clientMoney = parseFloat(prompt('Client Money', '')!)
+const loteryPrice: number = 4
 
-// if (clientMoney < productPrice){
-//   const moneyRequired = productPrice - clientMoney
-//   document.write(`Недостатньо коштів. Ще потрібно: ${moneyRequired.toFixed(2)}`)
-// } else{
-//   const change = clientMoney - productPrice
-//  if (change > 0){
-//   if(change >= loteryPrice)
-//     document.write(`Ваша решта ${change.toFixed(2)} грн. 
-//       Ви можете придбати лотерею, вартість ${loteryPrice} грн.`)
-//   else document.write(`Ваша решта ${change.toFixed(2)} грн.`)
-//  } else document.write('Дякуємо за покупку') 
-// }
+if (clientMoney < productPrice){
+  const moneyRequired = productPrice - clientMoney
+  document.write(`Недостатньо коштів. Ще потрібно: ${moneyRequired.toFixed(2)}`)
+} else{
+  const change = clientMoney - productPrice
+ if (change > 0){
+  if(change >= loteryPrice)
+    document.write(`Ваша решта ${change.toFixed(2)} грн. 
+      Ви можете придбати лотерею, вартість ${loteryPrice} грн.`)
+  else document.write(`Ваша решта ${change.toFixed(2)} грн.`)
+ } else document.write('Дякуємо за покупку') 
+}
 
 
 //___TASK_03___________________________________
 //  Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
 // ___________________________________________________
 
-// const randomNum = 1 + Math.floor(Math.random()* 5)
+const randomNum = 1 + Math.floor(Math.random()* 5)
 
-// let userNum = parseInt(prompt('Pick a number from 1 to 5 = ', '')!)
-// if(userNum === randomNum)
-//   document.write('Ok')
-// else{
-//   userNum = parseInt(prompt('not guessed! your second attempt = ', '')!)
-//   if(userNum === randomNum)
-//    document.write('Good')
-//   else 
-//     document.write(`Not guessed! The random number is = ${randomNum}`)
-// }
+let userNum = parseInt(prompt('Pick a number from 1 to 5 = ', '')!)
+if(userNum === randomNum)
+  document.write('Ok')
+else{
+  userNum = parseInt(prompt('not guessed! your second attempt = ', '')!)
+  if(userNum === randomNum)
+   document.write('Good')
+  else 
+    document.write(`Not guessed! The random number is = ${randomNum}`)
+}
 
 
 //___TASK_04__________________________________________
@@ -70,30 +70,30 @@ document.write(result)
 // (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
 // _________________________________________________________
 
-// let userInput = prompt(`Enter your age:`, '')
-// let result: string = ''
+let userInput = prompt(`Enter your age:`, '')
+let result: string = ''
 
-// if (userInput === null || userInput === ''|| isNaN (parseInt(userInput)) )
-//   result = "Incorrect data. Enter the number, please"
-// else { 
-//   const userAge = parseInt(userInput)
+if (userInput === null || userInput === ''|| isNaN (parseInt(userInput)) )
+  result = "Incorrect data. Enter the number, please"
+else { 
+  const userAge = parseInt(userInput)
 
-//   if (userAge < 2 || userAge > 120)
-//   result = 'Incorrect numbr. Enter the number from 2 to 120'
-//   else if (userAge < 7) 
-//     result = 'Kindergarten child'
-//   else if (userAge <= 17) 
-//     result = 'Teenager'
-//   else if (userAge<= 22) 
-//     result = 'Student'
-//   else if (userAge <= 65) 
-//     result = 'Worker'
-//   else 
-//     result = 'Retired person'
-//   }
+  if (userAge < 2 || userAge > 120)
+  result = 'Incorrect numbr. Enter the number from 2 to 120'
+  else if (userAge < 7) 
+    result = 'Kindergarten child'
+  else if (userAge <= 17) 
+    result = 'Teenager'
+  else if (userAge<= 22) 
+    result = 'Student'
+  else if (userAge <= 65) 
+    result = 'Worker'
+  else 
+    result = 'Retired person'
+  }
 
-// document.write(result)
-// console.log(result)
+document.write(result)
+console.log(result)
 
 
 //___TASK_05_________________________________________
@@ -101,64 +101,64 @@ document.write(result)
 // С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
 // ______________________________________________________
 
-// const  category = prompt('Category')
-// let vehType: string
+const  category = prompt('Category')
+let vehType: string
 
-// switch (category?.toUpperCase()) {
-//   case 'A': 
-//     vehType = 'motorcycle'
-//     break
-//   case 'B': 
-//     vehType = 'car'
-//     break
-//   case 'C': 
-//     vehType = 'truck'
-//     break 
+switch (category?.toUpperCase()) {
+  case 'A': 
+    vehType = 'motorcycle'
+    break
+  case 'B': 
+    vehType = 'car'
+    break
+  case 'C': 
+    vehType = 'truck'
+    break 
     
-//   default:
-//     vehType = 'unknow vehicle'
-//     break
-// }
+  default:
+    vehType = 'unknow vehicle'
+    break
+}
 
-// document.write(`vehType : ${vehType}`)
+document.write(`vehType : ${vehType}`)
 
 
 //___TASK_06__________________________________________________
 // З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.
 // __________________________________________________________
 
-// let week: string = ''
-// const dayNum = parseInt(prompt('Enter the day of the week number')!)
+let week: string = ''
+const dayNum = parseInt(prompt('Enter the day of the week number')!)
 
-// if (isNaN(dayNum) || dayNum <1 || dayNum >7) 
-// week = "Incorrect data. enter the number from 1 to 7 "
-// else {
-//   switch (dayNum) {
-//     case 1:
-//       week = "Sunday"
-//       break
-//     case 2:
-//       week = "Monday"
-//       break
-//     case 3:
-//       week = "Tuesday"
-//       break
-//     case 4:
-//       week = "Wednesday"
-//       break
-//     case 5:
-//       week = "Thursday"
-//       break
-//     case 6:
-//       week = "Friday"
-//       break
-//     case 7:
-//       week = "Saturday"
-//       break
-//   }
-// }
+if (isNaN(dayNum) || dayNum <1 || dayNum >7) 
+week = "Incorrect data. enter the number from 1 to 7 "
+else {
+  switch (dayNum) {
+    case 1:
+      week = "Sunday"
+      break
+    case 2:
+      week = "Monday"
+      break
+    case 3:
+      week = "Tuesday"
+      break
+    case 4:
+      week = "Wednesday"
+      break
+    case 5:
+      week = "Thursday"
+      break
+    case 6:
+      week = "Friday"
+      break
+    case 7:
+      week = "Saturday"
+      break
+  }
+}
 
-//  document.write(week)
+ document.write(week)
 
 
 //___TASK_07_______________________________________________
@@ -171,22 +171,22 @@ document.write(result)
 // if else
 //------------------------------ 
 
-// const numMonth = parseInt(prompt('введіть номер місяця') ?? '0') 
-// let season: string = ''
-// if (isNaN(numMonth) || numMonth < 1 || numMonth > 12) 
-//   season = "Невірний номер місяця! Введіть число від 1 до 12"
-//   else if (numMonth >= 3 && numMonth <= 5) {
-//   season = "Весна"
-// } else if (numMonth >= 6 && numMonth <= 8) {
-//   season = "Літо"
-// } else if (numMonth >= 9 && numMonth <= 11) {
-//   season = "Осінь"
-// } else {
-//   season = "Зима"
-// }
+const numMonth = parseInt(prompt('введіть номер місяця') ?? '0') 
+let season: string = ''
+if (isNaN(numMonth) || numMonth < 1 || numMonth > 12) 
+  season = "Невірний номер місяця! Введіть число від 1 до 12"
+  else if (numMonth >= 3 && numMonth <= 5) {
+  season = "Весна"
+} else if (numMonth >= 6 && numMonth <= 8) {
+  season = "Літо"
+} else if (numMonth >= 9 && numMonth <= 11) {
+  season = "Осінь"
+} else {
+  season = "Зима"
+}
 
-// console.log(`Місяць ${numMonth} — пора року: ${season}`)
-// document.write(`Місяць ${numMonth} — пора року: ${season}`)
+console.log(`Місяць ${numMonth} — пора року: ${season}`)
+document.write(`Місяць ${numMonth} — пора року: ${season}`)
 
 // ------------------------------
 // switch
