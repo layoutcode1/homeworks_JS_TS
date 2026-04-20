@@ -21,9 +21,9 @@ document.write(result)
 // З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо 
 // у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
 // _______________________________________________________
-const productPrice = parseFloat(prompt('Product Price', '')!)
-const clientMoney = parseFloat(prompt('Client Money', '')!)
-const loteryPrice: number = 4
+const productPrice = parseFloat(prompt('Product Price', ''))
+const clientMoney = parseFloat(prompt('Client Money', ''))
+const loteryPrice = 4
 if (clientMoney < productPrice){
   const moneyRequired = productPrice - clientMoney
   document.write(`Недостатньо коштів. Ще потрібно: ${moneyRequired.toFixed(2)}`)
@@ -40,11 +40,11 @@ if (clientMoney < productPrice){
 //  Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
 // ___________________________________________________
 const randomNum = 1 + Math.floor(Math.random()* 5)
-let userNum = parseInt(prompt('Pick a number from 1 to 5 = ', '')!)
+let userNum = parseInt(prompt('Pick a number from 1 to 5 = ', ''))
 if(userNum === randomNum)
   document.write('Ok')
 else{
-  userNum = parseInt(prompt('not guessed! your second attempt = ', '')!)
+  userNum = parseInt(prompt('not guessed! your second attempt = ', ''))
   if(userNum === randomNum)
    document.write('Good')
   else 
@@ -55,7 +55,7 @@ else{
 // (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
 // _________________________________________________________
 let userInput = prompt(`Enter your age:`, '')
-let result: string = ''
+let result = ''
 if (userInput === null || userInput === ''|| isNaN (parseInt(userInput)) )
   result = "Incorrect data. Enter the number, please"
 else { 
@@ -99,8 +99,8 @@ document.write(`vehType : ${vehType}`)
 //___TASK_06__________________________________________________
 // З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.
 // __________________________________________________________
-let week: string = ''
-const dayNum = parseInt(prompt('Enter the day of the week number')!)
+let week = ''
+const dayNum = parseInt(prompt('Enter the day of the week number'))
 if (isNaN(dayNum) || dayNum <1 || dayNum >7) 
 week = "Incorrect data. enter the number from 1 to 7 "
 else {
@@ -137,7 +137,7 @@ else {
 // if else
 //------------------------------ 
 const numMonth = parseInt(prompt('введіть номер місяця') ?? '0') 
-let season: string = ''
+let season = ''
 if (isNaN(numMonth) || numMonth < 1 || numMonth > 12) 
   season = "Невірний номер місяця! Введіть число від 1 до 12"
   else if (numMonth >= 3 && numMonth <= 5) {
@@ -154,7 +154,7 @@ document.write(`Місяць ${numMonth} — пора року: ${season}`)
 // ------------------------------
 // switch
 // ------------------------------
-// const numMonth = parseInt(prompt('Enter the month number from 1 to 12')!) ||0
+// const numMonth = parseInt(prompt('Enter the month number from 1 to 12')) ||0
 // let season = ''
 // switch (true){
 //   case numMonth >= 3 && numMonth <= 5:
