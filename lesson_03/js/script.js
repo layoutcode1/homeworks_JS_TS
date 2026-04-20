@@ -8,7 +8,7 @@ let name1stChild = prompt('Введіть ім-я першої дитини:', '
 let candiesFor1stChild = parseInt(prompt('Введіть кількість цукерок у першої дитини:', ''))
 let name2ndChild = prompt('Введіть ім-я другої дитини:', '')
 let candiesFor2ndChild = parseInt(prompt('Введіть кількість цукерок у другої дитини:', ''))
-let result: string = ''
+let result = ''
 if (candiesFor1stChild > candiesFor2ndChild) {
   result = `${name1stChild} має більше цукерок.`
 } else if (candiesFor2ndChild > candiesFor1stChild)
