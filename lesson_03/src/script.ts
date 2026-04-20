@@ -5,6 +5,8 @@
 // у якої кількість цукерок є більшою, або вивести, що кількість однакова.
 // __________________________________________________________
 
+if (confirm('Task_01_ALLOW?')) {
+
 let name1stChild = prompt('Введіть ім-я першої дитини:', '')
 let candiesFor1stChild = parseInt(prompt('Введіть кількість цукерок у першої дитини:', '')!)
 
@@ -21,13 +23,15 @@ if (candiesFor1stChild > candiesFor2ndChild) {
     nameChild= 'У обох дітей однакова кількість цукерок.'
 }
 document.write(nameChild)
-
+}
 
 
 // ___TASK_02______________________________________
 // З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо 
 // у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
 // _______________________________________________________
+
+if (confirm('Task_02_ALLOW?')) {
 
 const productPrice = parseFloat(prompt('Product Price', '')!)
 const clientMoney = parseFloat(prompt('Client Money', '')!)
@@ -45,11 +49,13 @@ if (clientMoney < productPrice){
   else document.write(`Ваша решта ${change.toFixed(2)} грн.`)
  } else document.write('Дякуємо за покупку') 
 }
-
+}
 
 //___TASK_03___________________________________
 //  Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
 // ___________________________________________________
+
+if (confirm('Task_03_ALLOW?')) {
 
 const randomNum = 1 + Math.floor(Math.random()* 5)
 
@@ -63,12 +69,14 @@ else{
   else 
     document.write(`Not guessed! The random number is = ${randomNum}`)
 }
-
+}
 
 //___TASK_04__________________________________________
 // З клавіатури вводиться вік людини. Вивести на екран ким він є 
 // (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
 // _________________________________________________________
+
+if (confirm('Task_04_ALLOW?')) {
 
 let userInput = prompt(`Enter your age:`, '')
 let result: string = ''
@@ -94,12 +102,14 @@ else {
 
 document.write(result)
 console.log(result)
-
+}
 
 //___TASK_05_________________________________________
 // З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, 
 // С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
 // ______________________________________________________
+
+if (confirm('Task_05_ALLOW?')) {
 
 const  category = prompt('Category')
 let vehType: string
@@ -121,11 +131,13 @@ switch (category?.toUpperCase()) {
 }
 
 document.write(`vehType : ${vehType}`)
-
+}
 
 //___TASK_06__________________________________________________
 // З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.
 // __________________________________________________________
+
+if (confirm('Task_06_ALLOW?')) {
 
 let week: string = ''
 const dayNum = parseInt(prompt('Enter the day of the week number')!)
@@ -159,17 +171,16 @@ else {
 }
 
  document.write(week)
-
+}
 
 //___TASK_07_______________________________________________
 // З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься
 // _____________________________________________________________
-
-// SOLVING:
-// if else - 13 строчок коду. switch - 18 стро
 // ----------------------------
 // if else
 //------------------------------ 
+
+if (confirm('Task_07_if else_ALLOW?')) {
 
 const numMonth = parseInt(prompt('введіть номер місяця') ?? '0') 
 let season: string = ''
@@ -187,10 +198,13 @@ if (isNaN(numMonth) || numMonth < 1 || numMonth > 12)
 
 console.log(`Місяць ${numMonth} — пора року: ${season}`)
 document.write(`Місяць ${numMonth} — пора року: ${season}`)
+}
 
 // ------------------------------
-// switch
+// switch_true
 // ------------------------------
+
+if (confirm('Task_07_switch(true)_ALLOW?')) {
 
 const monthNum = parseInt(prompt('Enter the month number from 1 to 12')!) ||0
 let seasonYear = ''
@@ -213,3 +227,4 @@ switch (true){
 
 console.log(`Month ${monthNum} - Time of year: ${seasonYear}`)
 document.write(`Month ${monthNum} - Time of year: ${seasonYear}`)
+}
